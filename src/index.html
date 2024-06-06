@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data usage tips</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <header class="shadow-xl">
+        <nav class="container py-8">
+            <a href="#">
+                <img src="images/safaricom-logo.svg" class="max-w-[7.375rem]">
+            </a>
+        </nav>
+    </header>
+
+    <main class="bg-[#F5F5F5] py-8">
+        <div class="container rounded-[20px] bg-white shadow-card p-8">
+            <div class="grid place-items-center text-center">
+                <h2 class="font-bold text-xl">Safaricom Data Tips</h2>
+                <div class="max-w-[57.7rem] mt-1.5">
+                    Are your data bundles draining faster than expected? Several factors you might not be aware of may
+                    be leading to mobile data wastage. Here are some tips that will help you keep your data for longer
+                    and enjoy extended browsing time on your mobile phone.
+                    Choose your operating system below.
+                </div>
+            </div>
+            <hr class="border border-saf-gray my-8">
+
+
+
+            <div class="grid place-items-center space-x-8 mb-4">
+                <div class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
+                    data-tabs-toggle="#default-tab-content"
+                    data-tabs-active-classes="shadow-border border border-saf-green text-white bg-saf-green"
+                    data-tabs-inactive-classes="shadow-border border border-saf-gray-border" role="tablist">
+                    <div class="me-2" role="presentation">
+                        <button class="flex items-center gap-4 p-2.5 px-4 rounded-xl" id="android-tab"
+                            data-tabs-target="#android" type="button" role="tab" aria-controls="android"
+                            aria-selected="false">
+                            Android
+                            <img src="images/android-logo.svg" class="w-9 h-5" />
+                        </button>
+                    </div>
+                    <div class="me-2" role="presentation">
+                        <button
+                            class="flex items-center gap-4 p-1.5 px-4 rounded-xl hover:text-gray-600 hover:border-gray-300"
+                            id="iphone-tab" data-tabs-target="#iphone" type="button" role="tab" aria-controls="iphone"
+                            aria-selected="false">
+                            iPhone/iOS
+                            <img src="images/iphone-logo.svg" class="w-[22px] h-[27px]" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="android" role="tabpanel"
+                    aria-labelledby="android-tab">
+                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">android tab's associated content</strong>.
+                        Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
+                        swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="iphone" role="tabpanel" aria-labelledby="iphone-tab">
+                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">iphone tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
+                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="settings" role="tabpanel"
+                    aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
+                            class="font-medium text-gray-800 dark:text-white">Settings tab's associated
+                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
+                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
