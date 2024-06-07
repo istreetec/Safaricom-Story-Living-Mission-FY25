@@ -40,3 +40,11 @@
     }
   }
 }
+
+/* All Slider's active Indicator styling */
+.slider button[aria-current="true"] {
+  background-color: #39B54A !important;
+  border-radius: 10px;
+  width: 29px;
+  height: 7px;
+}

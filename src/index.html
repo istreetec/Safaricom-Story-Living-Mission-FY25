@@ -32,52 +32,137 @@
             <hr class="border border-saf-gray my-8">
 
 
-
-            <div class="grid place-items-center space-x-8 mb-4">
-                <div class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
-                    data-tabs-toggle="#default-tab-content"
-                    data-tabs-active-classes="shadow-border border border-saf-green text-white bg-saf-green"
-                    data-tabs-inactive-classes="shadow-border border border-saf-gray-border" role="tablist">
-                    <div class="me-2" role="presentation">
-                        <button class="flex items-center gap-4 p-2.5 px-4 rounded-xl" id="android-tab"
-                            data-tabs-target="#android" type="button" role="tab" aria-controls="android"
-                            aria-selected="false">
-                            Android
-                            <img src="images/android-logo.svg" class="w-9 h-5" />
-                        </button>
-                    </div>
-                    <div class="me-2" role="presentation">
-                        <button
-                            class="flex items-center gap-4 p-1.5 px-4 rounded-xl hover:text-gray-600 hover:border-gray-300"
-                            id="iphone-tab" data-tabs-target="#iphone" type="button" role="tab" aria-controls="iphone"
-                            aria-selected="false">
-                            iPhone/iOS
-                            <img src="images/iphone-logo.svg" class="w-[22px] h-[27px]" />
-                        </button>
-                    </div>
+            <!-- Links -->
+            <div class="grid place-items-center">
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="flex items-center gap-4 p-2.5 px-4 rounded-xl shadow-border border border-saf-green text-white bg-saf-green"
+                        id="android-tab" data-tabs-target="#android" type="button" role="tab" aria-controls="android"
+                        aria-selected="false">
+                        Android
+                        <img src="images/android-logo.svg" class="w-9 h-5" />
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-4 p-1.5 px-4 rounded-xl shadow-border border border-saf-gray-border hover:text-gray-600 hover:border-gray-300"
+                        id="iphone-tab" data-tabs-target="#iphone" type="button" role="tab" aria-controls="iphone"
+                        aria-selected="false">
+                        iPhone/iOS
+                        <img src="images/iphone-logo.svg" class="w-[22px] h-[27px]" />
+                    </a>
                 </div>
             </div>
-            <div id="default-tab-content">
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="android" role="tabpanel"
-                    aria-labelledby="android-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">android tab's associated content</strong>.
-                        Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
-                        swaps classes to control the content visibility and styling.</p>
+
+            <!-- Android slider -->
+
+
+            <div id="default-carousel" class="relative w-full slider" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-[28rem]">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-4">
+                                <div class="flex items-center justify-center h-full">
+                                    <img src="images/phone-1.jpg" class="">
+                                </div>
+                            </div>
+                            <div class="col-span-7 pt-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-2 text-saf-green text-2xl font-semibold">
+                                        <div
+                                            class="size-8 border rounded-full border-saf-green flex items-center justify-center">
+                                            1
+                                        </div>
+                                        <div>Restrict App background data.</div>
+                                    </div>
+
+                                    <div class="text-lg space-y-4">
+                                        <p>Some apps keep consuming mobile data even when the smartphone is not in use.
+                                            Background data allows you to keep your apps monitored and updated while
+                                            multitasking or when the screen is off. But every app doesn&apos;t need to
+                                            use
+                                            background data at all time. <span class="font-bold">Go to Settings >>
+                                                Data Usage,</span>and you can see
+                                            the statistics for which app is consuming how much of data.</p>
+
+                                        <p>Tap on an app, and you can see both the foreground and background data usage
+                                            for that app. Foreground data usage is the data consumed by the app when it
+                                            is actively used by you when open. Background data is the data consumed when
+                                            you are not using the app, and the app is running in the background. It
+                                            requires no action and occurs automatically. This can include things like
+                                            automatic app updates or sync.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-2.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-3.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-4.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-5.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="iphone" role="tabpanel" aria-labelledby="iphone-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">iphone tab's associated
-                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
-                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <!-- Slider indicators -->
+                <div
+                    class="absolute z-30  w-full flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-start-5 *:bg-[#00000066] *:size-2 w-full">
+                            <button type="button" class="size-2 rounded-full" aria-current="true" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 4"
+                                data-carousel-slide-to="3"></button>
+                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 5"
+                                data-carousel-slide-to="4"></button>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="settings" role="tabpanel"
-                    aria-labelledby="settings-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">Settings tab's associated
-                            content</strong>. Clicking another tab will toggle the visibility of this one for the next.
-                        The tab JavaScript swaps classes to control the content visibility and styling.</p>
-                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 -start-[4.2rem] z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none"
+                    data-carousel-prev>
+                    <span class="inline-flex items-center justify-center size-10 rounded-full bg-saf-green text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="size-4 rtl:rotate-180"
+                            aria-hidden="true" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="M5 1 1 5l4 4" />
+                        </svg>
+                    </span>
+                    <span class="sr-only">Previous</span>
+                </button>
+
+                <button type="button"
+                    class="absolute top-0 -end-[4.2rem] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center size-10 rounded-full bg-saf-green text-white group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="size-4 text-white rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
             </div>
         </div>
     </main>
