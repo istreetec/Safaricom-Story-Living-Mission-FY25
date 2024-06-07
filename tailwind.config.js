@@ -28,6 +28,7 @@ module.exports = {
             colors: {
                 "saf-gray" : "#E5E5E5",
                 "saf-green" : "#2CB34A",
+                "saf-menu-green" : "#52B44B",
                 "saf-gray-border" : "#0000001A",
             },
         },
