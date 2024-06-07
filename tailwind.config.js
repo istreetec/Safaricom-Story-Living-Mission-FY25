@@ -30,6 +30,8 @@ module.exports = {
                 "saf-green" : "#2CB34A",
                 "saf-menu-green" : "#52B44B",
                 "saf-gray-border" : "#0000001A",
+                "saf-black" : "#2C2C2C",
+                "saf-offwhite" : "#cbcbcb",
             },
         },
     },
