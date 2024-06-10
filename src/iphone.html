@@ -10,28 +10,30 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <!-- Top Nav -->
-    <header class="bg-saf-menu-green uppercase text-white font-semibold text-sm">
-        <div class="flex items-center container *:tracking-widest space-x-4">
-            <a href="#" class="p-2 hover:bg-black">
-                personal
-            </a>
-            <a href="#" class="p-2 hover:bg-black">business </a>
-            <a href="#" class="p-2 hover:bg-black">about us </a>
-            <a href="#" class="p-2 hover:bg-black">investor relations</a>
-        </div>
-    </header>
+    <div class="fixed w-full z-50">
+        <!-- Top Nav -->
+        <header class="bg-saf-menu-green uppercase text-white font-semibold text-sm">
+            <div class="flex items-center container *:tracking-widest space-x-4">
+                <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">
+                    personal
+                </a>
+                <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">business </a>
+                <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">about us </a>
+                <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">investor relations</a>
+            </div>
+        </header>
+    
+        <!-- secondary nav -->
+        <header class="shadow-xl bg-white">
+            <nav class="container py-8">
+                <a href="#">
+                    <img src="images/safaricom-logo.svg" class="max-w-[7.375rem]">
+                </a>
+            </nav>
+        </header>
+    </div>
 
-    <!-- secondary nav -->
-    <header class="shadow-xl">
-        <nav class="container py-8">
-            <a href="#">
-                <img src="images/safaricom-logo.svg" class="max-w-[7.375rem]">
-            </a>
-        </nav>
-    </header>
-
-    <main class="bg-[#F5F5F5] py-8">
+    <main class="bg-[#F5F5F5] pb-8 pt-[calc(7.964rem+2rem)]">
         <div class="container rounded-[20px] bg-white shadow-card p-8">
             <div class="grid place-items-center text-center">
                 <h2 class="font-bold text-xl">Safaricom Data Tips</h2>
@@ -49,19 +51,15 @@
             <!-- Links -->
             <div class="grid place-items-center">
                 <div class="flex items-center gap-4">
-                    <a href="#"
-                        class="flex items-center gap-4 p-2.5 px-4 rounded-xl shadow-border border border-saf-green text-white bg-saf-green"
-                        id="android-tab" data-tabs-target="#android" type="button" role="tab" aria-controls="android"
-                        aria-selected="false">
+                    <a href="/android.html"
+                        class="flex items-center gap-4 p-2 px-4 rounded-xl shadow-border border border-saf-gray-border hover:text-gray-600 hover:border-gray-300">
                         Android
-                        <img src="images/android-logo.svg" class="w-9 h-5" />
+                        <img src="images/android-black-logo.svg" class="w-9 h-5" />
                     </a>
-                    <a href="#"
-                        class="flex items-center gap-4 p-1.5 px-4 rounded-xl shadow-border border border-saf-gray-border hover:text-gray-600 hover:border-gray-300"
-                        id="iphone-tab" data-tabs-target="#iphone" type="button" role="tab" aria-controls="iphone"
-                        aria-selected="false">
+                    <a href="/iphone.html"
+                        class="flex items-center gap-4 p-1.5 px-4 rounded-xl shadow-border border border-saf-green text-white bg-saf-green">
                         iPhone/iOS
-                        <img src="images/iphone-logo.svg" class="w-[22px] h-[27px]" />
+                        <img src="images/iphone-white-logo.svg" class="w-[22px] h-[27px]" />
                     </a>
                 </div>
             </div>
@@ -77,86 +75,76 @@
                         <div class="grid grid-cols-12 gap-4 mt-10">
                             <div class="col-span-4">
                                 <div class="flex items-center justify-center h-full">
-                                    <img src="images/phone-1.jpg" class="">
+                                    <img src="images/how-to-reducedata-usage-ios.jpg" class="">
                                 </div>
                             </div>
-                            <div class="col-span-7 pt-16">
+                            <div class="col-span-7 pt-16 max-h-[24rem] overflow-y-auto">
                                 <div class="flex flex-col gap-4">
-                                    <div class="flex items-center gap-2 text-saf-green text-2xl font-semibold">
+                                    <div class="text-saf-green text-2xl font-semibold">
+                                        <div>How To Reduce iPhone Data Usage iOS</div>
+                                    </div>
+
+                                    <div class="text-lg">
+                                        <p>Stopping data-hungry apps from eating up your data bundles isn't the only way
+                                            for iPhone owners to reduce their data usage. Here are seven phone-wide
+                                            settings that can help you optimize your mobile data usage.</p>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-saf-green text-xl font-semibold">
                                         <div
                                             class="text-lg font-bold pt-1 size-8 border rounded-full border-saf-green flex items-center justify-center">
                                             1
                                         </div>
                                         <div>Restrict App background data.</div>
                                     </div>
-
-                                    <div class="text-lg space-y-4">
-                                        <p>Some apps keep consuming mobile data even when the smartphone is not in use.
-                                            Background data allows you to keep your apps monitored and updated while
-                                            multitasking or when the screen is off. But every app doesn&apos;t need to
-                                            use
-                                            background data at all time. <span class="font-bold">Go to Settings >>
-                                                Data Usage,</span>and you can see
-                                            the statistics for which app is consuming how much of data.</p>
-
-                                        <p>Tap on an app, and you can see both the foreground and background data usage
-                                            for that app. Foreground data usage is the data consumed by the app when it
-                                            is actively used by you when open. Background data is the data consumed when
-                                            you are not using the app, and the app is running in the background. It
-                                            requires no action and occurs automatically. This can include things like
-                                            automatic app updates or sync.</p>
-                                    </div>
+                                    <p>You can prevent iTunes and the App Store from downloading music, movies, apps and
+                                        so on when you are away from a Wi-Fi signal. To do so, go to <span
+                                            class="font-bold">Settings > iTunes & App Store</span> and toggle off <span
+                                            class="font-bold">Use Cellular Data.</span>
+                                    </p>
+                                    <p>
+                                        Tap <span class="font-bold">Use Cellular Data</span> to prevent iTunes from
+                                        using your cellular data for
+                                        automatic downloads.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="grid grid-cols-12 gap-4 mt-10">
                             <div class="col-span-4">
                                 <div class="flex items-center justify-center h-full">
-                                    <img src="images/phone-2.jpg" class="">
+                                    <img src="images/disable-background-app-refresh.jpg" class="">
                                 </div>
                             </div>
-                            <div class="col-span-7 pt-16">
+                            <div class="col-span-7 pt-16 max-h-[24rem] overflow-y-auto">
                                 <div class="flex flex-col gap-4">
                                     <div class="flex items-center gap-2 text-saf-green text-2xl font-semibold">
                                         <div
                                             class="text-lg font-bold pt-1 size-8 border rounded-full border-saf-green flex items-center justify-center">
                                             2
                                         </div>
-                                        <div>Update apps over Wi-Fi only.</div>
+                                        <div>Disable background app refresh</div>
                                     </div>
 
                                     <div class="text-lg space-y-4">
-                                        <p>One of the most effective ways to reduce mobile data consumption is to
-                                            disable automatic app updates in Play Store. Go to Play Store and tap on
-                                            <span class="font-bold text-base">Settings >>Auto-update apps.</span>
+                                        <p>iOS apps can update in the background, grabbing new content as they sit idle
+                                            so they can show you the latest news when you return to them. <span
+                                                class="font-bold text-base">Go to Settings
+                                                > General > Background App Refresh </span>in order to turn this setting
+                                            off
+                                            completely. You can also go the a la carte route from the list below and
+                                            choose which apps update in the background.
                                         </p>
-
-                                        <p>Make sure that you select "Auto-update apps over Wi-Fi only." Alternatively,
-                                            you can choose "Do not auto-update apps," but it&apos;s not recommended
-                                            since you&apos;ll have to remember from time to time to update your apps
-                                            manually.</p>
+                                        <p>
+                                            Pick and choose the apps that may use data in the background of your phone
+                                            or turn them all off.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-3.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-4.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-5.svg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                 </div>
                 <!-- Slider indicators -->
@@ -168,12 +156,6 @@
                                 data-carousel-slide-to="0"></button>
                             <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 2"
                                 data-carousel-slide-to="1"></button>
-                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 3"
-                                data-carousel-slide-to="2"></button>
-                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 4"
-                                data-carousel-slide-to="3"></button>
-                            <button type="button" class="size-2 rounded-full" aria-current="false" aria-label="Slide 5"
-                                data-carousel-slide-to="4"></button>
                         </div>
                     </div>
                 </div>
