@@ -16,7 +16,8 @@ module.exports = {
             },
             boxShadow: {
               'border': '0px 0px 10.11px 0px #0000000D',
-              'card': '0px 0px 20px 0px #0000000A'
+              'card': '0px 0px 20px 0px #0000000A',
+              'circle': '0px 2px 4px 0px #0000001A',
             },
             dropShadow: {
                 logo: "0 0 2em #646cffaa",
@@ -30,6 +31,7 @@ module.exports = {
                 "saf-green" : "#2CB34A",
                 "saf-menu-green" : "#52B44B",
                 "saf-gray-border" : "#0000001A",
+                "saf-gray-light" : "#00000033",
                 "saf-black" : "#2C2C2C",
                 "saf-offwhite" : "#cbcbcb",
             },

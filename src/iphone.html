@@ -22,7 +22,7 @@
                 <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">investor relations</a>
             </div>
         </header>
-    
+
         <!-- secondary nav -->
         <header class="shadow-xl bg-white">
             <nav class="container py-8">
@@ -188,6 +188,81 @@
                     </span>
                 </button>
             </div>
+
+            <div class="relative my-16">
+                <div class="absolute z-20 w-full flex items-center justify-center -translate-y-1/2">
+                    <button
+                        class="grid place-items-center size-14 rounded-full bg-white border border-[#D9D9D9] shadow-circle p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- place above absolute circle on top of below bordered div. Such that the ruler cuts at the centre of the circle but the circle is at the foreground -->
+                <div class="border border-saf-gray-light"></div>
+            </div>
+
+            <!-- Start Accordion -->
+
+            <div id="accordion-flush" data-accordion="collapse"
+                data-active-classes="bg-white text-gray-900 border-b-0"
+                data-inactive-classes="text-gray-500" class="space-y-2">
+                <div class="shadow-border border border-[#0000001A] rounded-xl p-4 pt-0">
+                    <h2 id="accordion-flush-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full pb-2 pt-6 font-medium rtl:text-right gap-3"
+                            data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                            aria-controls="accordion-flush-body-1">
+                            <span class="font-bold text-base">Quality watching on YouTube</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden pb-2" aria-labelledby="accordion-flush-heading-1">
+                        <div class="pr-16 space-y-4">
+                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the interesting content on YouTube, we need a sustainable way to consume the content. Save up to 60% of your data by choosing to watch videos in standard quality instead of High Definition. Here&apos;s how you do this: -</p>
+                            
+                            <ul class="list-disc pl-4">
+                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video time bar.</li>
+                                <li>Click on the &apos;Quality&apos; option.</li>
+                                <li>From the options provided, 480p is a pretty good balance between clarity and data load.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow-border border border-[#0000001A] rounded-xl p-4 pt-0">
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full pb-2 pt-6 font-medium rtl:text-right gap-3"
+                            data-accordion-target="#accordion-flush-body-2" aria-expanded="true"
+                            aria-controls="accordion-flush-body-2">
+                            <span class="font-bold text-base">Snapchatting smartly</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden pb-2" aria-labelledby="accordion-flush-heading-2">
+                        <div class="pr-16 space-y-4">
+                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the interesting content on YouTube, we need a sustainable way to consume the content. Save up to 60% of your data by choosing to watch videos in standard quality instead of High Definition. Here&apos;s how you do this: -</p>
+                            
+                            <ul class="list-disc pl-4">
+                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video time bar.</li>
+                                <li>Click on the &apos;Quality&apos; option.</li>
+                                <li>From the options provided, 480p is a pretty good balance between clarity and data load.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Accordion -->
         </div>
     </main>
 
