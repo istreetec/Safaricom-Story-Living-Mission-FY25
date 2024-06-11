@@ -61,7 +61,7 @@
             <div class="grid place-items-center text-center">
                 <h2 class="font-bold text-xl">Safaricom Data Tips</h2>
                 <!-- max-w-[57.7rem] -->
-                <div class="max-w-[65rem] mt-1.5 text-lg">
+                <div class="max-w-[65rem] mt-1.5 text-md md:text-lg">
                     Are your data bundles draining faster than expected? Several factors you might not be aware of may
                     be leading to mobile data wastage. Here are some tips that will help you keep your data for longer
                     and enjoy extended browsing time on your mobile phone.
@@ -88,18 +88,145 @@
             </div>
 
             <!-- start iphone accordion -->
-             <div class="space-y-3 mb-5">
-                 <div class="grid place-items-center text-center">
-                     <div class="md:hidden max-w-52">
-                         <div class="text-saf-green font-semibold text-xl leading-6">
-                             How To Reduce iPhone Data Usage iOS
-                         </div>
-                     </div>
-                 </div>
-                 <p class="text-left">Stopping data-hungry apps from eating up your data bundles isn't the only way for
-                     iPhone owners to reduce their data usage. Here are seven phone-wide settings that can help you optimize
-                     your mobile data usage.</p>
-             </div>
+            <div class="space-y-3 mb-5">
+                <div class="grid place-items-center text-center">
+                    <div class="md:hidden max-w-52">
+                        <div class="text-saf-green font-semibold text-xl leading-6">
+                            How To Reduce iPhone Data Usage iOS
+                        </div>
+                    </div>
+                </div>
+                <p class="text-left">Stopping data-hungry apps from eating up your data bundles isn't the only way for
+                    iPhone owners to reduce their data usage. Here are seven phone-wide settings that can help you
+                    optimize
+                    your mobile data usage.</p>
+            </div>
+
+
+            <div id="accordion-iphone" data-accordion="collapse" class="my-8 md:hidden" data-active-classes="bg-white"
+                data-inactive-classes="text-gray-500">
+                <h2 id="accordion-iphone-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-gray-500 border-b border-saf-gray-border gap-3"
+                        data-accordion-target="#accordion-iphone-body-1" aria-expanded="true"
+                        aria-controls="accordion-iphone-body-1">
+
+                        <!-- Accordion title -->
+                        <div class="flex items-center gap-4 text-saf-green text-2xl font-semibold">
+                            <div class="text-lg font-bold pt-1 size-8 border rounded-full border-saf-green">
+                                1
+                            </div>
+                            <div class="text-left leading-6 font-medium text-xl max-w-52">
+                                Restrict iTunes and App Store downloads
+                            </div>
+                        </div>
+
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-iphone-body-1" class="hidden" aria-labelledby="accordion-iphone-heading-1">
+                    <div class="py-5 border-b border-gray-200 flex flex-col items-center justify-center gap-4">
+                        <img src="/images/how-to-reducedata-usage-ios.jpg" class="max-w-56 h-[27.631rem]" />
+
+                        <div class="text-md space-y-4">
+                            <p>You can prevent iTunes and the App Store from downloading music, movies, apps and
+                                so on when you are away from a Wi-Fi signal. To do so, go to <span
+                                    class="font-bold">Settings > iTunes & App Store</span> and toggle off <span
+                                    class="font-bold">Use Cellular Data.</span>
+                            </p>
+                            <p>
+                                Tap <span class="font-bold">Use Cellular Data</span> to prevent iTunes from
+                                using your cellular data for
+                                automatic downloads.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="accordion-iphone-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 gap-3"
+                        data-accordion-target="#accordion-iphone-body-2" aria-expanded="false"
+                        aria-controls="accordion-iphone-body-2">
+
+                        <div class="flex items-center gap-4 text-saf-green text-2xl font-semibold">
+                            <div class="text-lg font-bold pt-1 size-8 border rounded-full border-saf-green">
+                                2
+                            </div>
+                            <div class="text-left leading-6 font-medium text-xl max-w-52">
+                                Disable background app refresh
+                            </div>
+                        </div>
+
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-iphone-body-2" class="hidden" aria-labelledby="accordion-iphone-heading-2">
+                    <div class="py-5 border-b border-gray-200 flex flex-col items-center justify-center gap-4">
+                        <img src="/images/how-to-reducedata-usage-ios.jpg" class="max-w-56 h-[27.631rem]" />
+
+                        <div class="text-md space-y-4">
+                            <p>iOS apps can update in the background, grabbing new content as they sit idle
+                                so they can show you the latest news when you return to them. <span
+                                    class="font-bold text-base">Go to Settings
+                                    > General > Background App Refresh </span>in order to turn this setting
+                                off
+                                completely. You can also go the a la carte route from the list below and
+                                choose which apps update in the background.
+                            </p>
+                            <p>
+                                Pick and choose the apps that may use data in the background of your phone
+                                or turn them all off.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="accordion-iphone-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 gap-3"
+                        data-accordion-target="#accordion-iphone-body-3" aria-expanded="false"
+                        aria-controls="accordion-iphone-body-3">
+
+                        <div class="flex items-center gap-4 text-saf-green text-2xl font-semibold">
+                            <div class="text-lg font-bold pt-1 size-8 border rounded-full border-saf-green">
+                                3
+                            </div>
+                            <div class="text-left leading-6 font-medium text-xl max-w-52">
+                                See which apps are using the most data
+                            </div>
+                        </div>
+
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-iphone-body-3" class="hidden" aria-labelledby="accordion-iphone-heading-3">
+                    <div class="py-5 border-b border-gray-200 flex flex-col items-center justify-center gap-4">
+                        <img src="/images/how-to-reducedata-usage-ios.jpg" class="max-w-56 h-[27.631rem]" />
+
+                        <p class="text-md">Curious to know which apps are consuming the most data? <span
+                                class="font-bold text-base">Go to Settings >
+                                Cellular </span>and you can see how much data you've used in the current billing period
+                            and below
+                            that you'll see a list of your apps. Under each app's name is the amount of data it has used
+                            for the current billing period. You can toggle off any app that you think is eating more
+                            than its fair share.
+
+                            See which app is using the most data here.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- end iphone accordion -->
 
 
