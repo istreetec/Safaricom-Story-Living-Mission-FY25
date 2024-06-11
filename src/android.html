@@ -12,7 +12,7 @@
 <body class="overflow-x-hidden">
     <div class="fixed w-full z-50">
         <!-- Top Nav -->
-        <header class="bg-saf-menu-green uppercase text-white font-semibold text-sm">
+        <header class="hidden md:block bg-saf-menu-green uppercase text-white font-semibold text-sm">
             <div class="flex items-center container *:tracking-widest space-x-4">
                 <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">
                     personal
@@ -24,16 +24,39 @@
         </header>
 
         <!-- secondary nav -->
-        <header class="shadow-xl bg-white">
-            <nav class="container py-8">
-                <a href="#">
+        <header class="shadow-xl md:bg-white bg-[#52B44B]">
+            <nav class="container md:py-8 py-2.5 px-4 md:px-0">
+                <a href="#" class="hidden md:block">
                     <img src="images/safaricom-logo.svg" class="max-w-[7.375rem]">
                 </a>
+
+                <div class="w-full flex items-center justify-between">
+                    <a href="#" class="md:hidden">
+                        <img src="https://www.safaricom.co.ke/images/icons/mobile-logo.svg" class="w-11">
+                    </a>
+
+                    <div class="flex items-center gap-4 md:hidden">
+                        <a href="#"
+                            class="flex items-center gap-2 text-white bg-black p-0.5 px-2.5 rounded-full text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20" />
+                            </svg>
+                            My Account
+                        </a>
+                        <a href="#" class="text-white bg-black p-0.5 px-6 rounded-full text-sm">Help</a>
+                        <button class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </nav>
         </header>
     </div>
 
-    <main class="bg-[#F5F5F5] pb-8 pt-[calc(7.964rem+2rem)]">
+    <main class="bg-[#F5F5F5] pb-8 px-4 md:px-0 pt-[4.5rem] md:pt-[calc(7.964rem+2rem)]">
         <div class="container rounded-[20px] bg-white shadow-card p-8">
             <div class="grid place-items-center text-center">
                 <h2 class="font-bold text-xl">Safaricom Data Tips</h2>
@@ -64,10 +87,13 @@
                 </div>
             </div>
 
-            <!-- Android slider -->
 
+            <!-- start mobile accordion -->
 
-            <div id="default-carousel" class="relative w-full slider" data-carousel="static">
+            <!-- end mobile accordion -->
+
+            <!-- start desktop carousel  -->
+            <div id="desktop-carousel" class="hidden md:block relative w-full slider" data-carousel="static">
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-[30rem]">
                     <!-- Item 1 -->
@@ -183,11 +209,13 @@
                     </span>
                 </button>
             </div>
+            <!-- end desktop carousel  -->
         </div>
     </main>
 
 
-    <footer class="text-white">
+    <!-- TODO: Unhide later and style on Mobile -->
+    <footer class="text-white md:block hidden">
         <section class="bg-saf-menu-green">
             <div class="container">
                 <div class="grid grid-cols-12 py-8">
@@ -317,12 +345,7 @@
                     </ul>
                 </section>
             </div>
-
         </section>
-
-
-
-
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

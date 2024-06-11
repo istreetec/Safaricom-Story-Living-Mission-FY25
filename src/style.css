@@ -28,15 +28,31 @@
     font-style: normal;
     font-display: swap
   }
+
+  /* 769px to 1535px: 1.2vw (default) i.e. Where there are no media queries */
   html {
     font-size: 1.2vw;
     font-family: "Futura", "Lato", Helvetica, Arial, sans-serif;
   }
-  
-  @media (min-width: 1536px) { 
+
+  /* 0px to 425px: 4vw (due to !important) */
+  @media (max-width: 425px) {
+    html {
+      font-size: 4vw !important;
+    }
+  }
+
+  /* 426px to 768px: 2vw */
+  @media (max-width: 768px) {
+    html {
+      font-size: 2vw;
+    }
+  }
+
+  /* 1536px and above: 1vw */
+  @media (min-width: 1536px) {
     html {
       font-size: 1vw;
-      font-family: "Futura", "Lato", Helvetica, Arial, sans-serif;
     }
   }
 }
