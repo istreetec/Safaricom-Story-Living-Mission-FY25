@@ -12,7 +12,7 @@
 <body class="overflow-x-hidden">
     <div class="fixed w-full z-50">
         <!-- Top Nav -->
-        <header class="bg-saf-menu-green uppercase text-white font-semibold text-sm">
+        <header class="hidden md:block bg-saf-menu-green uppercase text-white font-semibold text-sm">
             <div class="flex items-center container *:tracking-widest space-x-4">
                 <a href="#" class="p-2 hover:bg-black transition ease-out duration-500">
                     personal
@@ -24,17 +24,40 @@
         </header>
 
         <!-- secondary nav -->
-        <header class="shadow-xl bg-white">
-            <nav class="container py-8">
-                <a href="#">
+        <header class="shadow-xl md:bg-white bg-saf-green">
+            <nav class="container md:py-8 py-2.5 px-4 md:px-0">
+                <a href="#" class="hidden md:block">
                     <img src="images/safaricom-logo.svg" class="max-w-[7.375rem]">
                 </a>
+
+                <div class="w-full flex items-center justify-between">
+                    <a href="#" class="md:hidden">
+                        <img src="https://www.safaricom.co.ke/images/icons/mobile-logo.svg" class="w-11">
+                    </a>
+
+                    <div class="flex items-center gap-4 md:hidden">
+                        <a href="#"
+                            class="flex items-center gap-2 text-white bg-black p-0.5 px-2.5 rounded-full text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20" />
+                            </svg>
+                            My Account
+                        </a>
+                        <a href="#" class="text-white bg-black p-0.5 px-6 rounded-full text-sm">Help</a>
+                        <button class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </nav>
         </header>
     </div>
 
-    <main class="bg-[#F5F5F5] pb-8 pt-[calc(7.964rem+2rem)]">
-        <div class="container rounded-[20px] bg-white shadow-card p-8">
+    <main class="bg-[#F5F5F5] pb-8 px-4 md:px-0 pt-[4.5rem] md:pt-[calc(7.964rem+2rem)]">
+        <div class="container rounded-[20px] bg-white shadow-card md:p-8 px-4 py-8">
             <div class="grid place-items-center text-center">
                 <h2 class="font-bold text-xl">Safaricom Data Tips</h2>
                 <!-- max-w-[57.7rem] -->
@@ -49,8 +72,8 @@
 
 
             <!-- Links -->
-            <div class="grid place-items-center">
-                <div class="flex items-center gap-4">
+            <div class="grid place-items-center mb-8 md:mb-0">
+                <div class="flex items-center justify-center gap-4 w-full">
                     <a href="/android.html"
                         class="flex items-center gap-4 p-2 px-4 rounded-xl shadow-border border border-saf-gray-border hover:text-gray-600 hover:border-gray-300">
                         Android
@@ -64,10 +87,25 @@
                 </div>
             </div>
 
+            <!-- start iphone accordion -->
+             <div class="space-y-3 mb-5">
+                 <div class="grid place-items-center text-center">
+                     <div class="md:hidden max-w-52">
+                         <div class="text-saf-green font-semibold text-xl leading-6">
+                             How To Reduce iPhone Data Usage iOS
+                         </div>
+                     </div>
+                 </div>
+                 <p class="text-left">Stopping data-hungry apps from eating up your data bundles isn't the only way for
+                     iPhone owners to reduce their data usage. Here are seven phone-wide settings that can help you optimize
+                     your mobile data usage.</p>
+             </div>
+            <!-- end iphone accordion -->
+
+
             <!-- Android slider -->
 
-
-            <div id="default-carousel" class="relative w-full slider" data-carousel="static">
+            <div id="desktop-carousel" class="hidden md:block relative w-full slider" data-carousel="static">
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-[30rem]">
                     <!-- Item 1 -->
@@ -189,7 +227,7 @@
                 </button>
             </div>
 
-            <div class="relative my-16">
+            <div class="relative my-16 md:block hidden">
                 <div class="absolute z-20 w-full flex items-center justify-center -translate-y-1/2">
                     <button
                         class="grid place-items-center size-14 rounded-full bg-white border border-[#D9D9D9] shadow-circle p-2">
@@ -204,8 +242,7 @@
 
             <!-- Start Accordion -->
 
-            <div id="accordion-flush" data-accordion="collapse"
-                data-active-classes="bg-white text-gray-900 border-b-0"
+            <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900 border-b-0"
                 data-inactive-classes="text-gray-500" class="space-y-2">
                 <div class="shadow-border border border-[#0000001A] rounded-xl p-4 pt-0">
                     <h2 id="accordion-flush-heading-1">
@@ -216,19 +253,24 @@
                             <span class="font-bold text-base">Quality watching on YouTube</span>
                             <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5 5 1 1 5" />
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
                             </svg>
                         </button>
                     </h2>
                     <div id="accordion-flush-body-1" class="hidden pb-2" aria-labelledby="accordion-flush-heading-1">
                         <div class="pr-16 space-y-4">
-                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the interesting content on YouTube, we need a sustainable way to consume the content. Save up to 60% of your data by choosing to watch videos in standard quality instead of High Definition. Here&apos;s how you do this: -</p>
-                            
+                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the
+                                interesting content on YouTube, we need a sustainable way to consume the content. Save
+                                up to 60% of your data by choosing to watch videos in standard quality instead of High
+                                Definition. Here&apos;s how you do this: -</p>
+
                             <ul class="list-disc pl-4">
-                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video time bar.</li>
+                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video
+                                    time bar.</li>
                                 <li>Click on the &apos;Quality&apos; option.</li>
-                                <li>From the options provided, 480p is a pretty good balance between clarity and data load.</li>
+                                <li>From the options provided, 480p is a pretty good balance between clarity and data
+                                    load.</li>
                             </ul>
                         </div>
                     </div>
@@ -243,19 +285,24 @@
                             <span class="font-bold text-base">Snapchatting smartly</span>
                             <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5 5 1 1 5" />
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
                             </svg>
                         </button>
                     </h2>
                     <div id="accordion-flush-body-2" class="hidden pb-2" aria-labelledby="accordion-flush-heading-2">
                         <div class="pr-16 space-y-4">
-                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the interesting content on YouTube, we need a sustainable way to consume the content. Save up to 60% of your data by choosing to watch videos in standard quality instead of High Definition. Here&apos;s how you do this: -</p>
-                            
+                            <p>Because every now and then we need a dose of our favorite YouTubers plus all the
+                                interesting content on YouTube, we need a sustainable way to consume the content. Save
+                                up to 60% of your data by choosing to watch videos in standard quality instead of High
+                                Definition. Here&apos;s how you do this: -</p>
+
                             <ul class="list-disc pl-4">
-                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video time bar.</li>
+                                <li>While on YouTube, click on the little cog on the bottom right hand side of the video
+                                    time bar.</li>
                                 <li>Click on the &apos;Quality&apos; option.</li>
-                                <li>From the options provided, 480p is a pretty good balance between clarity and data load.</li>
+                                <li>From the options provided, 480p is a pretty good balance between clarity and data
+                                    load.</li>
                             </ul>
                         </div>
                     </div>
@@ -267,7 +314,7 @@
     </main>
 
 
-    <footer class="text-white">
+    <footer class="text-white md:block hidden">
         <section class="bg-saf-menu-green">
             <div class="container">
                 <div class="grid grid-cols-12 py-8">
@@ -397,12 +444,7 @@
                     </ul>
                 </section>
             </div>
-
         </section>
-
-
-
-
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
