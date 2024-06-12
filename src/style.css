@@ -64,3 +64,9 @@
   width: 29px;
   height: 7px;
 }
+
+/* Drawer opacity */
+div[drawer-backdrop] {
+  z-index: 49;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
