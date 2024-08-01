@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safaricom Story Living Mission FY25</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body class="overflow-x-hidden">
-    <header class="fixed z-50 inset-0 h-18 bg-[#EDFFED]/70">
+    <header class="fixed z-30 inset-0 h-18 bg-[#EDFFED]/70">
         <div class="container flex items-center py-2 px-8">
             <div class="logo max-w-[7.125rem]">
                 <img src="images/logo.svg" alt="Safaricom Logo Picture" class="min-h-[2.8481rem]" />
             </div>
-            <button class="ml-auto">
+            <button id="menu-burger" class="ml-auto">
                 <img src="images/menu.svg" alt="Menu Icon" />
             </button>
         </div>
     </header>
 
-    <div class="relative h-[34.6875rem] max-h-[34.6875rem] bg-no-repeat bg-cover"
+    <div class="relative h-[34.6875rem] max-h-[34.6875rem] bg-no-repeat bg-cover hidden md:block"
         style="background-image: url(images/home-banner.jpg);">
         <div class="flex items-start justify-center w-full gap-6 absolute bottom-0">
             <img src="images/peter-ndegwa-ceo.png" class="max-w-[31.3894rem] min-h-[31.3894rem]"
@@ -55,7 +55,7 @@
             <h2 class="heading pt-[3.6875rem] pb-[2.8125rem]">Clusters</h2>
 
             <div class="container px-8">
-                <div class="grid grid-cols-3 gap-[2.0625rem]">
+                <div class="grid md:grid-cols-3 gap-[2.0625rem]">
                     <div class="max-w-full">
                         <img src="images/fred-waithaka.svg" alt="Fred Waithaka Picture" class="w-full h-auto" />
                         <div class="text-[20px] text-saf-black leading-[24px] pt-[1.125rem]">
@@ -185,7 +185,7 @@
             </p>
 
             <div class="container px-8 space-y-[3.25rem]">
-                <div class="grid grid-cols-4 gap-[1.8125rem]">
+                <div class="grid md:grid-cols-4 gap-[1.8125rem]">
                     <div class="text-[24px]">
                         <div class="relative max-w-full">
                             <!-- remove `hidden` class conditionally -->
@@ -311,7 +311,7 @@
         <!-- end ourstories -->
 
         <!-- start share your story -->
-        <div id="share-your-story" class="container px-8 pb-[3.4375rem]">
+        <div id="share-your-story" class="container px-8 pb-[3.4375rem] hidden">
             <div class="relative max-h-[25.8125rem] h-[25.8125rem] bg-cover bg-no-repeat bg-top"
                 style="background-image: url(images/share-your-story.jpg);">
                 <!-- overlay behind the content -->
@@ -333,7 +333,7 @@
     <div id="share-your-story" class="container px-8 pb-[3.4375rem]">
         <h2 class="heading py-[2.25rem]">Our Numbers</h2>
 
-        <div class="grid grid-cols-4 gap-[1.8125rem]">
+        <div class="grid md:grid-cols-4 gap-[1.8125rem]">
             <div class="relative max-w-full border-t-[6px] border-t-[#FF8F8A]">
                 <div class="absolute inset-0 flex flex-col items-center justify-center gap-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="85" height="39" viewBox="0 0 85 39" fill="none">
@@ -470,26 +470,27 @@
 
     <footer class="bg-black py-8">
         <div class="container px-8">
-            <div class="flex items-start gap-24 border-b pb-8" style="border-bottom-color: rgba(255, 255, 255, 0.35);">
+            <div class="flex md:flex-row flex-col md:items-start gap-8 md:gap-24 border-b pb-8"
+                style="border-bottom-color: rgba(255, 255, 255, 0.35);">
                 <!-- start group 1 links -->
                 <div>
-                    <h4 class="text-white text-[20px] font-bold pb-5">Clusters</h4>
-                    <div class="grid grid-cols-3">
-                        <div class="flex flex-col space-y-2 *:text-base capitalize"
+                    <h4 class="text-white text-[20px] font-bold pb-5">Departments</h4>
+                    <div class="grid md:grid-cols-3">
+                        <div class="flex flex-col space-y-4 md:space-y-2 *:text-base capitalize"
                             style="color: rgba(255, 255, 255, 0.70);">
                             <a href="#"> > Finance</a>
                             <a href="#"> > Corporate Affairs</a>
                             <a href="#"> > Consumer Business</a>
                             <a href="#"> > Human Resources</a>
                         </div>
-                        <div class="flex flex-col space-y-2 *:text-base capitalize"
+                        <div class="flex flex-col space-y-4 md:space-y-2 mt-4 md:mt-0 *:text-base capitalize"
                             style="color: rgba(255, 255, 255, 0.70);">
                             <a href="#"> > Corporate Security</a>
                             <a href="#"> > Technology Information</a>
                             <a href="#"> > Enterprise Business</a>
                             <a href="#"> > Channels</a>
                         </div>
-                        <div class="flex flex-col space-y-2 *:text-base capitalize"
+                        <div class="flex flex-col space-y-4 md:space-y-2 mt-4 md:mt-0 *:text-base capitalize"
                             style="color: rgba(255, 255, 255, 0.70);">
                             <a href="#"> > Business Development & Strategy</a>
                             <a href="#"> > Financial Services</a>
@@ -511,10 +512,11 @@
                 <!-- end group 2 links -->
             </div>
 
-            <div class="flex items-center w-full mt-[1.875rem]" style="color: rgba(255, 255, 255, 0.70);">
+            <div class="flex flex-col gap-[24px] items-center md:flex-row w-full md:gap-0 mt-[1.875rem]"
+                style="color: rgba(255, 255, 255, 0.70);">
                 <span class="text-sm">© 2024 Story Living Powered by Safaricom PLC</span>
                 <!-- start social icons -->
-                <div class="ml-auto flex items-center gap-[1.145rem]">
+                <div class="md:ml-auto flex gap-[24px] md:items-center md:gap-[1.145rem]">
                     <a href="#"><img src="images/linkedin.png" alt="LinkedIn Icon Image" class="size-[2.375rem]"></a>
                     <a href="#"><img src="images/x.png" alt="X Icon Image" class="size-[2.375rem]"></a>
                     <a href="#"><img src="images/Facebook.png" alt="Facebook Icon Image" class="size-[2.375rem]"></a>
@@ -526,7 +528,95 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- start full page main menu -->
+    <div id="main-menu" class="fixed inset-0 z-50 bg-black h-svh overflow-y-auto hidden">
+        <nav class="flex justify-end w-full ml-auto mt-12 pr-12">
+            <button id="menu-close" class="size-[2.8125rem] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <path d="M33.8316 33.8314L11.2773 11.2772" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M33.8677 11.3137L11.3135 33.868" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </nav>
+
+        <section class="flex flex-col gap-8 pl-[10.625rem] mt-16">
+            <div>
+                <h2 class="capitalize text-[26.876px] text-saf-deep-green font-bold mb-4">Clusters</h2>
+                <div class="grid grid-cols-4 gap-16">
+                    <div
+                        class="flex flex-col *:text-white *:capitalize text-[21.501px] *:py-3.5 *:border-b-2 max-w-full">
+                        <a href="#"> > Finance</a>
+                        <a href="#"> > Corporate Affairs</a>
+                        <a href="#"> > Consumer Business</a>
+                        <a href="#"> > Human Resources</a>
+                    </div>
+                    <div
+                        class="flex flex-col *:text-white *:capitalize text-[21.501px] *:py-3.5 *:border-b-2 max-w-full">
+                        <a href="#"> > Corporate Security</a>
+                        <a href="#"> > Technology Information</a>
+                        <a href="#"> > Enterprise Business</a>
+                        <a href="#"> > Channels</a>
+                    </div>
+                    <div
+                        class="flex flex-col *:text-white *:capitalize text-[21.501px] *:py-3.5 *:border-b-2 max-w-full">
+                        <a href="#"> > Business Development & Strategy</a>
+                        <a href="#"> > Financial Services</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="capitalize text-[26.876px] text-saf-deep-green font-bold mb-4">Our Stories</h2>
+                <div class="grid grid-cols-4 gap-16">
+                    <div
+                        class="flex flex-col *:text-white *:capitalize text-[21.501px] *:py-3.5 *:border-b-2 max-w-full">
+                        <a href="#"> > Articles</a>
+                        <a href="#"> > Videos</a>
+                        <a href="#"> > Podcasts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end full page main menu -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuBurger = document.querySelector("#menu-burger");
+            var mainMenu = document.querySelector("#main-menu");
+            var menuClose = document.querySelector("#menu-close");
+
+            // Hide the main menu by default
+            mainMenu.classList.add('hidden');
+
+            function toggleMenu() {
+                // Toggle the 'hidden' class
+                mainMenu.classList.toggle('hidden');
+
+                // Add animation classes
+                if (!mainMenu.classList.contains('hidden')) {
+                    // Menu is being shown
+                    mainMenu.classList.add('animate-slideDown');
+                    mainMenu.classList.remove('animate-slideUp');
+                } else {
+                    // Menu is being hidden
+                    mainMenu.classList.add('animate-slideUp');
+                    mainMenu.classList.remove('animate-slideDown');
+                }
+            }
+
+            menuBurger.addEventListener("click", function ($event) {
+                toggleMenu();
+            });
+
+            menuClose.addEventListener("click", function ($event) {
+                toggleMenu();
+            });
+        });
+    </script>
+
 </body>
 
 </html>

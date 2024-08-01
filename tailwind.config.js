@@ -47,6 +47,20 @@ module.exports = {
                 "saf-offwhite": "#cbcbcb",
                 "saf-gray-border": "#CECECE",
             },
+            animation: {
+                'slideDown': 'slideDown 0.3s ease-out',
+                'slideUp': 'slideUp 0.3s ease-in 0.1s'
+            },
+            keyframes: {
+                slideDown: {
+                    '0%': { transform: 'translateY(-100%)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { transform: 'translateY(0)', opacity: '1' },
+                    '100%': { transform: 'translateY(-100%)', opacity: '0' },
+                },
+            }
         },
     },
     plugins: [],

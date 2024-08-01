@@ -67,7 +67,15 @@
   }
 
   .btn-secondary {
-    @apply flex items-center gap-4 rounded-full py-[0.7731rem] px-[1.5462rem] font-semibold text-[1.0825rem] leading-[1.3875rem] border-[0.0775rem] border-saf-green text-saf-green;
+    @apply flex items-center gap-4 rounded-full py-[0.7731rem] px-[1.5462rem] font-semibold text-[1.0825rem] leading-[1.3875rem] border-[0.0775rem] border-saf-green text-saf-green transition-all duration-300 ease-in-out;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-saf-green text-white;
+  }
+
+  .btn-secondary:hover svg {
+    @apply text-white;
   }
 }
 
